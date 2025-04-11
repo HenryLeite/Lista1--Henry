@@ -52,6 +52,54 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form10-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10-Henry.Designer.cs">
+      <DependentUpon>Form10-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11-Henry.Designer.cs">
+      <DependentUpon>Form11-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12-Henry.Designer.cs">
+      <DependentUpon>Form12-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13-Henry.Designer.cs">
+      <DependentUpon>Form13-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14-Henry.Designer.cs">
+      <DependentUpon>Form14-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form15-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15-Henry.Designer.cs">
+      <DependentUpon>Form15-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16-Henry.Designer.cs">
+      <DependentUpon>Form16-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form17-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17-Henry.Designer.cs">
+      <DependentUpon>Form17-Henry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2-Henry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,10 +118,52 @@
     <Compile Include="Form4-Henry.Designer.cs">
       <DependentUpon>Form4-Henry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5-Henry.Designer.cs">
+      <DependentUpon>Form5-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6-Henry.Designer.cs">
+      <DependentUpon>Form6-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7-Henry.Designer.cs">
+      <DependentUpon>Form7-Henry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8-Henry.Designer.cs">
+      <DependentUpon>Form8-Henry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10-Henry.resx">
+      <DependentUpon>Form10-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12-Henry.resx">
+      <DependentUpon>Form12-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13-Henry.resx">
+      <DependentUpon>Form13-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14-Henry.resx">
+      <DependentUpon>Form14-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15-Henry.resx">
+      <DependentUpon>Form15-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17-Henry.resx">
+      <DependentUpon>Form17-Henry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2-Henry.resx">
       <DependentUpon>Form2-Henry.cs</DependentUpon>
@@ -83,6 +173,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4-Henry.resx">
       <DependentUpon>Form4-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5-Henry.resx">
+      <DependentUpon>Form5-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6-Henry.resx">
+      <DependentUpon>Form6-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7-Henry.resx">
+      <DependentUpon>Form7-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8-Henry.resx">
+      <DependentUpon>Form8-Henry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
