@@ -16,7 +16,7 @@ namespace Lista1__Henry
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form17_Henry());
+            Application.Run(new Form16_Henry());
         }
     }
 }

@@ -16,5 +16,29 @@ namespace Lista1__Henry
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double n1, n2, r1, r2;
+            n1 = Convert.ToDouble(textBox1.Text);
+            n2 = Convert.ToDouble(textBox2.Text);
+            r1 = n1 + n2;
+            r2 = r1 * r1;
+            label4.Text = r1.ToString();
+            label5.Text = r2.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            label4.Text = "_____________";
+            label5.Text = "_____________";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
