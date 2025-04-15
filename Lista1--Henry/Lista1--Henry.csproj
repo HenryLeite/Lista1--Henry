@@ -112,6 +112,12 @@
     <Compile Include="Form2-Henry.Designer.cs">
       <DependentUpon>Form2-Henry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form21-Henry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21-Henry.Designer.cs">
+      <DependentUpon>Form21-Henry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form3-Henry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2-Henry.resx">
       <DependentUpon>Form2-Henry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21-Henry.resx">
+      <DependentUpon>Form21-Henry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3-Henry.resx">
       <DependentUpon>Form3-Henry.cs</DependentUpon>
