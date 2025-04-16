@@ -19,11 +19,18 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double n1, n2, resultado;
-            n2 = Convert.ToDouble(textBox1.Text);
-            n1 = Convert.ToDouble(textBox2.Text);
-            resultado = n1 + n2;
-            label1.Text = resultado.ToString();
+            try
+            {
+                double n1, n2, resultado;
+                n2 = Convert.ToDouble(textBox1.Text);
+                n1 = Convert.ToDouble(textBox2.Text);
+                resultado = n1 + n2;
+                label1.Text = resultado.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

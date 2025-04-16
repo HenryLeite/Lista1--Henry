@@ -19,27 +19,39 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double ht, vh, pc, sb, sl, td;
-            ht = Convert.ToDouble(textBox1.Text);
-            vh = Convert.ToDouble(textBox2.Text);
-            pc = Convert.ToDouble(textBox3.Text);
-            sb = ht * vh;
-            td = pc / 100 * sb;
-            sl = sb - td;
-            label5.Text = sl.ToString("F2");
+            try
+            {
+                double ht, vh, pc, sb, sl, td;
+                ht = Convert.ToDouble(textBox1.Text);
+                vh = Convert.ToDouble(textBox2.Text);
+                pc = Convert.ToDouble(textBox3.Text);
+                sb = ht * vh;
+                td = pc / 100 * sb;
+                sl = sb - td;
+                label5.Text = sl.ToString("F2");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            label5.Text = "";
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            label5.Text = "";
         }
     }
 }

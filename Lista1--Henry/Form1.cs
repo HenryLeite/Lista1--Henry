@@ -19,10 +19,17 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double area, conta;
-            area = Convert.ToDouble(textBox1.Text);
-            conta = (area * area) * 3.14159;
-            label1.Text = conta.ToString();
+            try
+            {
+                double area, conta;
+                area = Convert.ToDouble(textBox1.Text);
+                conta = (area * area) * 3.14159;
+                label1.Text = conta.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

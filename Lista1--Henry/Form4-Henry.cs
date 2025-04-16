@@ -23,6 +23,17 @@ namespace Lista1__Henry
             v1 = Convert.ToDouble(textBox1.Text);
             resultado = (v1 - 32) * 0.55;
             label3.Text = resultado.ToString();
+            try
+            {
+                double v1, resultado;
+                v1 = Convert.ToDouble(textBox1.Text);
+                resultado = (v1 - 32) * 0.55;
+                label3.Text = resultado.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
