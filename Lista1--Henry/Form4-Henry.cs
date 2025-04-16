@@ -19,10 +19,6 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double v1, resultado;
-            v1 = Convert.ToDouble(textBox1.Text);
-            resultado = (v1 - 32) * 0.55;
-            label3.Text = resultado.ToString();
             try
             {
                 double v1, resultado;

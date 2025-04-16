@@ -19,13 +19,20 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double dis, tempo, velo, litros;
-            tempo = Convert.ToDouble(textBox3.Text);
-            velo = Convert.ToDouble(textBox2.Text);
-            dis = tempo * velo;
-            litros = dis / 12;
-            label4.Text = litros.ToString();
-            label5.Text = dis.ToString();
+            try
+            {
+                double dis, tempo, velo, litros;
+                tempo = Convert.ToDouble(textBox3.Text);
+                velo = Convert.ToDouble(textBox2.Text);
+                dis = tempo * velo;
+                litros = dis / 12;
+                label4.Text = litros.ToString();
+                label5.Text = dis.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
