@@ -21,10 +21,17 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double n1, r1;
-            n1 = Convert.ToDouble(textBox1.Text); 
-            r1 = n1 / 3.6;
-            label4.Text = r1.ToString();
+            try
+            {
+                double n1, r1;
+                n1 = Convert.ToDouble(textBox1.Text);
+                r1 = n1 / 3.6;
+                label4.Text = r1.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)

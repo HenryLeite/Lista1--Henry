@@ -25,13 +25,20 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double n1, n2, r1, r2, r3;
-            n1 = Convert.ToDouble(textBox3.Text);
-            n2 = Convert.ToDouble(textBox1.Text);
-            r1 = n1 * n1;
-            r2 = n2 * n2;
-            r3 = r1 + r2;
-            label3.Text = r3.ToString();
+            try
+            {
+                double n1, n2, r1, r2, r3;
+                n1 = Convert.ToDouble(textBox3.Text);
+                n2 = Convert.ToDouble(textBox1.Text);
+                r1 = n1 * n1;
+                r2 = n2 * n2;
+                r3 = r1 + r2;
+                label3.Text = r3.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)

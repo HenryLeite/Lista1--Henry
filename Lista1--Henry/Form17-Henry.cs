@@ -25,11 +25,19 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int n1, n2, r1; 
-            n1 = Convert.ToInt32(textBox3.Text);
-            n2 = Convert.ToInt32(textBox1.Text);
-            r1 = n1 / n2;
-            label3.Text = r1.ToString();
+            
+            try
+            {
+                int n1, n2, r1;
+                n1 = Convert.ToInt32(textBox3.Text);
+                n2 = Convert.ToInt32(textBox1.Text);
+                r1 = n1 / n2;
+                label3.Text = r1.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 

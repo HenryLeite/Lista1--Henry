@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lista1__Henry
 {
@@ -19,13 +20,21 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double n1, r1, r2;
-            n1 = Convert.ToDouble(textBox1.Text);
-            r1 = n1 * n1;
-            r2 = n1 * n1 * n1;
-            label4.Text = r1.ToString();
-            label5.Text = r2.ToString();
+            try
+            {
+               double n1, r1, r2;
+                n1 = Convert.ToDouble(textBox1.Text);
+                r1 = n1* n1;
+                r2 = n1* n1 * n1;
+                label4.Text = r1.ToString();
+                label5.Text = r2.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
