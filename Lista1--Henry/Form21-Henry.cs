@@ -19,11 +19,18 @@ namespace Lista1__Henry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string name, sobre, completo;
-            name = Convert.ToString(textBox1.Text);
-            sobre = Convert.ToString(textBox2.Text);
-            completo = string.Concat("Olá, ",name," ",sobre, "!");
-            label4.Text = completo.ToString(); 
+            try
+            {
+                string name, sobre, completo;
+                name = Convert.ToString(textBox1.Text);
+                sobre = Convert.ToString(textBox2.Text);
+                completo = string.Concat("Olá, ", name, " ", sobre, "!");
+                label4.Text = completo.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,6 +46,31 @@ namespace Lista1__Henry
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

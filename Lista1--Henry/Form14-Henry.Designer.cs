@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form14_Henry));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -126,11 +127,11 @@
             // 
             this.label1.AllowDrop = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(278, 24);
+            this.label1.Location = new System.Drawing.Point(301, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 23);
+            this.label1.Size = new System.Drawing.Size(199, 23);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Calculadora de Quadrados";
+            this.label1.Text = "Calculadora de Média ";
             // 
             // Form14_Henry
             // 
@@ -147,7 +148,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form14_Henry";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form14_Henry";
             this.ResumeLayout(false);
             this.PerformLayout();
