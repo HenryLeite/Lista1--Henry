@@ -55,13 +55,18 @@ namespace Lista1__Henry
                 ano = Convert.ToString(textBox1.Text);
                 semestre = Convert.ToString(textBox3.Text);
                 ordem = Convert.ToString(textBox4.Text);
-                rm = string.Concat("", ano, "/", semestre, "/", ordem);
+                rm = string.Concat("", ano, semestre, ordem);
                 label4.Text = rm.ToString();
             }
             catch (FormatException)
             {
                 MessageBox.Show("Por favor, insira os valores ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
