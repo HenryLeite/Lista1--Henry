@@ -51,12 +51,15 @@ namespace Lista1__Henry
         {
             try
             {
-                string ano, semestre, ordem, rm;
+                string ano, semestre, ordem, rm, data, semestre2;
                 ano = Convert.ToString(textBox1.Text);
                 semestre = Convert.ToString(textBox3.Text);
                 ordem = Convert.ToString(textBox4.Text);
                 rm = string.Concat("", ano, semestre, ordem);
-                label4.Text = rm.ToString();
+                data = string.Concat("20", ano);
+                semestre2 = string.Concat("",semestre, " Semestre");
+                label7.Text = data.ToString();
+                label4.Text = semestre2.ToString();
             }
             catch (FormatException)
             {
@@ -65,6 +68,11 @@ namespace Lista1__Henry
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
