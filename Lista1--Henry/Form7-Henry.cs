@@ -40,11 +40,17 @@ namespace Lista1__Henry
             textBox2.Clear();
             textBox3.Clear();
             label4.Text = "_____________";
+            label5.Text = "_____________";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

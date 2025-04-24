@@ -35,6 +35,8 @@ namespace Lista1__Henry
             textBox3.Clear();
             textBox4.Clear();
             label4.Text = "_____________";
+            label7.Text = "_____________";
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
